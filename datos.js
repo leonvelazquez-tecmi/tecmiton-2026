@@ -5,5 +5,6 @@ window.TECMITON_DATOS = {
   meta: 300000,
   donantes: 250,
   actualizado: "1-nov-2026, 6:37 am",
+  inicio: "2026-10-28T00:00:00-06:00",
   cierre: "2026-11-05T23:59:00-06:00"
 };
