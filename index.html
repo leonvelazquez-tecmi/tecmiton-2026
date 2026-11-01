@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Tecmitón 2026 · Becas con Propósito</title>
 <meta name="description" content="Tecmitón 2026: tu donativo apoya Becas con Propósito de Tecmilenio. Dona en el formulario oficial de la Carrera Virtual. Iniciativa personal de León Velázquez.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23191919'/%3E%3Cpath d='M38 10 L26 54' stroke='%237000FF' stroke-width='9'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23191919'/%3E%3Cpath d='M38 10 L26 54' stroke='%239B5CFF' stroke-width='9'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&family=Hanken+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&family=Hanken+Grotesk:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --surface-100:#F6F1E6;
-  --surface-200:#EFE8D8;
+  --surface-100:#EEF0F4;
+  --surface-200:#E1E4EB;
   --ink:#191919;
-  --ink-2:#4C4A45;
-  --ink-3:#8B877E;
-  --hairline:#D9D2C2;
+  --ink-2:#5A6070;
+  --ink-3:#4B5160;
+  --hairline:#CDD2DC;
   --uv:#7000FF;
   --live:#B3231F;
   --tecmi:#00534C;
@@ -44,8 +44,8 @@ a{color:var(--uv)}
 /* barra superior */
 .topbar{background:var(--surface-100);border-bottom:2px solid var(--ink)}
 .topbar .wrap{display:flex;align-items:center;gap:14px;padding:16px 20px;flex-wrap:wrap}
-.logo{font-family:var(--display);font-weight:700;font-size:20px;color:var(--ink);text-decoration:none}
-.logo .sep{color:var(--uv)}
+.logo{font-family:var(--body);font-weight:800;font-size:20px;color:var(--ink);text-decoration:none;display:inline-block;line-height:1;padding-bottom:5px;border-bottom:3px solid var(--uv)}
+.logo .sep{color:var(--uv);font-weight:400}
 .topnav{margin-left:auto;display:flex;gap:18px;align-items:center;flex-wrap:wrap}
 .topnav a.navlink{font-family:var(--mono);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--ink);text-decoration:none}
 .topnav a.navlink:hover{color:var(--uv)}
@@ -170,8 +170,8 @@ a.badge:hover{box-shadow:none;transform:translate(4px,4px)}
 /* footer */
 footer{background:var(--ink);color:#CFC9BB;border-top:2px solid var(--uv);padding:40px 0}
 footer .wrap{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap}
-.f-logo{font-family:var(--display);font-weight:700;font-size:20px;color:var(--surface-100)}
-.f-slogan{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.06em;margin-top:6px;color:var(--uv)}
+.f-logo{font-family:var(--body);font-weight:800;font-size:20px;color:var(--surface-100);display:inline-block;line-height:1;padding-bottom:5px;border-bottom:3px solid var(--uv)}
+.f-slogan{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.06em;margin-top:8px;color:var(--uv)}
 .data-note{font-family:var(--mono);font-size:12px;max-width:64ch;line-height:1.7}
 .data-note a{color:#8FE0D6}
 @media(max-width:640px){.story,.card,.gap-card{box-shadow:6px 6px 0 var(--ink)}.story{padding:20px}}
@@ -181,8 +181,8 @@ footer .wrap{display:flex;justify-content:space-between;align-items:flex-start;g
 
 <header class="topbar">
   <div class="wrap">
-    <a class="logo" href="https://www.linkedin.com/in/leonvelazquez" target="_blank" rel="noopener">leonvelazquez <span class="sep">/</span></a>
-    <span class="kicker">Tecmitón 2026</span>
+    <a class="logo" href="https://www.linkedin.com/in/leonvelazquez" target="_blank" rel="noopener">leonvelazquez</a>
+    <span class="kicker"><span class="sep">/</span> Tecmitón 2026</span>
     <nav class="topnav">
       <a class="navlink" href="#avance">Avance</a>
       <a class="navlink" href="#historias">Historias</a>
