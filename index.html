@@ -55,7 +55,10 @@ a{color:var(--master)}
 
 /* tarjeta de historia */
 .story{background:#fff;color:var(--ink);margin-top:-48px;position:relative;z-index:2;box-shadow:0 12px 40px rgba(0,48,44,.18);padding:30px 32px}
+.story img{width:100%;height:240px;object-fit:cover;object-position:center 30%;margin-bottom:18px}
 .story .quote{font-size:22px;line-height:1.45;color:var(--master)}
+a.quote{text-decoration:none;display:block}
+a.quote:hover{color:var(--uni)}
 .story .who{margin-top:12px;font-family:var(--display);font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .story .detail{margin-top:14px;color:var(--muted)}
 
@@ -84,6 +87,7 @@ h2{font-size:26px;margin-bottom:14px}
 .carousel-shell{position:relative}
 .carousel{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px;scrollbar-width:thin}
 .card-story{flex:0 0 330px;scroll-snap-align:start;border:1px solid var(--line);background:#fff;padding:26px 24px;display:flex;flex-direction:column;gap:12px}
+.card-story img{width:100%;height:150px;object-fit:cover;margin-bottom:4px}
 .card-story .tag{font-family:var(--display);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#00301F;background:var(--uni);display:inline-block;padding:4px 10px;align-self:flex-start}
 .card-story h3{font-size:16px;letter-spacing:.03em}
 .card-story p{font-size:15px;color:var(--muted)}
@@ -93,7 +97,6 @@ h2{font-size:26px;margin-bottom:14px}
 .car-nav{display:flex;gap:10px;margin-top:16px}
 .car-nav button{width:42px;height:42px;border:1.5px solid var(--master);background:#fff;color:var(--master);font-size:18px;cursor:pointer}
 .car-nav button:hover{background:var(--master);color:#fff}
-.graso-line{margin-top:18px;font-size:14px;color:var(--muted);max-width:70ch}
 
 /* brecha */
 .gap-card{border:2px solid var(--master);padding:34px 36px;background:#fff}
@@ -103,6 +106,8 @@ h2{font-size:26px;margin-bottom:14px}
 /* confianza */
 .trust{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
 .badge{border:1.5px solid var(--line);background:#fff;padding:20px 22px;text-align:center}
+a.badge{text-decoration:none}
+a.badge:hover{border-color:var(--uni)}
 .badge b{font-family:var(--display);color:var(--master);display:block;font-size:15px;letter-spacing:.02em}
 .badge span{font-size:14px;color:var(--muted)}
 
@@ -168,7 +173,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:flex-end;gap
   <div class="wrap">
     <div class="kicker">Tecmitón 2026 · Del 28 de octubre al 5 de noviembre</div>
     <h1>Que el talento decida, no el dinero.</h1>
-    <p class="lead">Tecmitón 2026 reúne a la comunidad Tecmilenio para sostener Becas con Propósito. Los proyectos que verás abajo nacieron en aulas Tecmilenio; las becas deciden quién llega a construirlos.</p>
+    <p class="lead">Tecmitón 2026 reúne a la comunidad Tecmilenio para sostener Becas con Propósito. Los proyectos que verás abajo nacieron en campuses Tecmilenio; las becas deciden quién llega a construirlos.</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="https://donar.tec.mx/s/formulario?Sitio=CarrerasVirtuales&Pr=a2N3f000000kXgmEAE&Cnia=a2GUG000003P0vx2AC&Campus=0013f000002IBZAAA4&IdEquipo=a1FUG000001epcj2AA" target="_blank" rel="noopener">Donar en la Carrera Virtual</a>
       <a class="btn btn-ghost" href="#avance">Ver el avance</a>
@@ -178,8 +183,9 @@ footer .wrap{display:flex;justify-content:space-between;align-items:flex-end;gap
 
 <div class="wrap">
   <div class="story" id="historia">
-    <div class="quote">De un salón Tecmilenio a representar a México en Kuwait.</div>
-    <div class="who">Equipo TERMIKA · Campus Reynosa</div>
+    <img src="https://blog.tecmilenio.mx/hubfs/IMG-20260811-WA0055-1.jpg" alt="Equipo TERMIKA del Campus Reynosa" loading="eager">
+    <a class="quote" href="https://blog.tecmilenio.mx/articulos/termika-proyecto-innovacion-social-tecmilenio" target="_blank" rel="noopener">Del Campus Reynosa a representar a México en Kuwait.</a>
+    <div class="who">Equipo TERMIKA · Campus Reynosa · <a href="https://blog.tecmilenio.mx/articulos/termika-proyecto-innovacion-social-tecmilenio" target="_blank" rel="noopener">Fuente: blog Tecmilenio</a></div>
     <div class="detail">5 estudiantes crearon un recubrimiento contra incendios hecho con material recuperado de llantas. Ganadores Absolutos de ExpoCiencias Tamaulipas 2026: representarán a México en la ExpoCiencias Internacional 2027 en Kuwait.</div>
   </div>
 
@@ -207,11 +213,12 @@ footer .wrap{display:flex;justify-content:space-between;align-items:flex-end;gap
 
 <section class="sec-alt" id="historias">
   <div class="wrap">
-    <h2>Nacieron en salones Tecmilenio</h2>
+    <h2>Nacieron en campuses Tecmilenio</h2>
     <p class="sec-intro">Este año, estudiantes de la red presentaron estos proyectos en competencias nacionales e internacionales. Las Becas con Propósito aseguran que el talento, y no la economía familiar, decida quién llega a construirlos.</p>
     <div class="carousel-shell">
       <div class="carousel" id="carousel">
         <div class="card-story">
+          <img src="https://blog.tecmilenio.mx/hubfs/Equipo%20KUALI%20de%20Tecmilenio%20Las%20Torres%20tras%20obtener%20su%20pase%20a%20la%20Enactus%20World%20Cup%202026..png" alt="Equipo KUALI del Campus Las Torres" loading="lazy">
           <span class="tag">Campus Las Torres</span>
           <h3>KUALI · Aprender sin internet</h3>
           <p>Ocho estudiantes crearon una app educativa inclusiva que funciona sin conexión, para comunidades rurales y personas con discapacidad. Campeones Nacionales Enactus México 2026: representarán a México en la Enactus World Cup en São Paulo, Brasil.</p>
@@ -219,11 +226,20 @@ footer .wrap{display:flex;justify-content:space-between;align-items:flex-end;gap
           <a class="src" href="https://blog.tecmilenio.mx/articulos/enactus-mexico-2026-kuali-app-inclusiva" target="_blank" rel="noopener">Fuente: blog Tecmilenio</a>
         </div>
         <div class="card-story">
+          <img src="https://blog.tecmilenio.mx/hubfs/sebastian-valenzuela-premio-estatal-juventud-sinaloa.jpg" alt="Sebastián Valenzuela, estudiante del Campus Culiacán" loading="lazy">
           <span class="tag">Campus Culiacán</span>
           <h3>ESCOMBLOCK · De escombros a vivienda</h3>
           <p>Sebastián Valenzuela, estudiante de Administración, convierte residuos de construcción en bloques: más de 1,000 personas beneficiadas y 500 bloques donados a fundaciones. Premio Estatal de la Juventud en Sinaloa.</p>
           <div class="q">"Con la donación de 300 bloques, una familia pudo pasar de tener una casa de lámina a tener una vivienda."</div>
           <a class="src" href="https://blog.tecmilenio.mx/articulos/sebastian-valenzuela-premio-estatal-juventud-escomblock" target="_blank" rel="noopener">Fuente: blog Tecmilenio</a>
+        </div>
+        <div class="card-story">
+          <img src="https://blog.tecmilenio.mx/hubfs/Equipo%20KUALI%20de%20Tecmilenio%20Las%20Torres%20tras%20obtener%20su%20pase%20a%20la%20Enactus%20World%20Cup%202026..png" alt="Equipos Enactus Tecmilenio en la final nacional" loading="lazy">
+          <span class="tag">Campus Guadalupe</span>
+          <h3>GRASO · Jabón desde aceite usado</h3>
+          <p>Estudiantes del Campus Guadalupe transforman aceite de cocina usado en jabón biodegradable. Uno de los tres proyectos ganadores en México del Ford Community Resiliency Student Challenge 2026.</p>
+          <div class="q">Economía circular hecha en un campus Tecmilenio.</div>
+          <a class="src" href="https://blog.tecmilenio.mx/articulos/enactus-mexico-2026-kuali-app-inclusiva" target="_blank" rel="noopener">Fuente: blog Tecmilenio</a>
         </div>
       </div>
       <div class="car-nav">
@@ -231,7 +247,6 @@ footer .wrap{display:flex;justify-content:space-between;align-items:flex-end;gap
         <button id="car-next" aria-label="Siguiente">&rarr;</button>
       </div>
     </div>
-    <p class="graso-line">También este año: estudiantes del Campus Guadalupe convirtieron aceite de cocina usado en jabón biodegradable con GRASO, uno de los tres proyectos ganadores en México del Ford Community Resiliency Student Challenge 2026 (<a href="https://blog.tecmilenio.mx/articulos/enactus-mexico-2026-kuali-app-inclusiva" target="_blank" rel="noopener">fuente</a>).</p>
   </div>
 </section>
 
@@ -254,7 +269,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:flex-end;gap
     <h2>Tu donativo, por el canal oficial</h2>
     <p class="sec-intro">Todo el proceso ocurre en el formulario oficial del Tec de Monterrey. Esta página solo te acompaña hasta ahí.</p>
     <div class="trust">
-      <div class="badge"><b>Formulario oficial del Tec</b><span>donar.tec.mx, el canal institucional de la Carrera Virtual</span></div>
+      <a class="badge" href="https://donar.tec.mx/s/formulario?Sitio=CarrerasVirtuales&Pr=a2N3f000000kXgmEAE&Cnia=a2GUG000003P0vx2AC&Campus=0013f000002IBZAAA4&IdEquipo=a1FUG000001epcj2AA" target="_blank" rel="noopener"><b>Formulario oficial del Tec &rarr;</b><span>donar.tec.mx, el canal institucional de la Carrera Virtual</span></a>
       <div class="badge"><b>Recibo deducible de impuestos</b><span>casilla disponible en el formulario con tus datos fiscales</span></div>
       <div class="badge"><b>Becas del 100%</b><span>el programa cubre la colegiatura completa de sus becarios (<a href="https://www.excelsior.com.mx/nacional/tecmilenio-impulsa-becas-del-100-para-el-talento-de-mexico/1513746" target="_blank" rel="noopener" style="color:var(--uni)">fuente</a>)</span></div>
     </div>
@@ -335,7 +350,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:flex-end;gap
 <footer>
   <div class="wrap">
     <div class="tagline">Está en ti<small>TECMILENIO.COM</small></div>
-    <div class="data-note">Página de apoyo de iniciativa personal de León Velázquez: no procesa pagos y todo donativo se realiza en el <a href="https://donar.tec.mx/s/formulario?Sitio=CarrerasVirtuales&Pr=a2N3f000000kXgmEAE&Cnia=a2GUG000003P0vx2AC&Campus=0013f000002IBZAAA4&IdEquipo=a1FUG000001epcj2AA" target="_blank" rel="noopener">formulario oficial del Tec de Monterrey</a>. Cifras tomadas de la página oficial de la campaña en Carrera Virtual (carreravirtual.tec.mx), con sello de actualización visible. Historias: <a href="https://blog.tecmilenio.mx/articulos/termika-proyecto-innovacion-social-tecmilenio" target="_blank" rel="noopener">TERMIKA (15-oct-2026)</a>, <a href="https://blog.tecmilenio.mx/articulos/enactus-mexico-2026-kuali-app-inclusiva" target="_blank" rel="noopener">KUALI y GRASO (28-ago-2026)</a> y <a href="https://blog.tecmilenio.mx/articulos/sebastian-valenzuela-premio-estatal-juventud-escomblock" target="_blank" rel="noopener">ESCOMBLOCK (9-oct-2026)</a>, blog oficial de Tecmilenio. Programa Becas con Propósito: becas del 100% para estudios profesionales (<a href="https://www.excelsior.com.mx/nacional/tecmilenio-impulsa-becas-del-100-para-el-talento-de-mexico/1513746" target="_blank" rel="noopener">Excélsior</a>).</div>
+    <div class="data-note">Página de apoyo de iniciativa personal de León Velázquez: no procesa pagos y todo donativo se realiza en el <a href="https://donar.tec.mx/s/formulario?Sitio=CarrerasVirtuales&Pr=a2N3f000000kXgmEAE&Cnia=a2GUG000003P0vx2AC&Campus=0013f000002IBZAAA4&IdEquipo=a1FUG000001epcj2AA" target="_blank" rel="noopener">formulario oficial del Tec de Monterrey</a>. Cifras tomadas de la página oficial de la campaña en Carrera Virtual (carreravirtual.tec.mx), con sello de actualización visible. Imágenes e historias: <a href="https://blog.tecmilenio.mx/articulos/termika-proyecto-innovacion-social-tecmilenio" target="_blank" rel="noopener">TERMIKA (15-oct-2026)</a>, <a href="https://blog.tecmilenio.mx/articulos/enactus-mexico-2026-kuali-app-inclusiva" target="_blank" rel="noopener">KUALI y GRASO (28-ago-2026)</a> y <a href="https://blog.tecmilenio.mx/articulos/sebastian-valenzuela-premio-estatal-juventud-escomblock" target="_blank" rel="noopener">ESCOMBLOCK (9-oct-2026)</a>, blog oficial de Tecmilenio. Programa Becas con Propósito: becas del 100% para estudios profesionales (<a href="https://www.excelsior.com.mx/nacional/tecmilenio-impulsa-becas-del-100-para-el-talento-de-mexico/1513746" target="_blank" rel="noopener">Excélsior</a>).</div>
   </div>
 </footer>
 
