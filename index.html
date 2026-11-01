@@ -9,9 +9,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --master:#00534C;          /* Pantone 330 C */
+  --master:#00534C;
   --master-deep:#003F3A;
-  --uni:#78D64B;             /* Pantone 7488 C */
+  --uni:#78D64B;
   --sec-1:#EAF3F1;
   --sec-2:#F2F7F4;
   --ink:#00302C;
@@ -53,6 +53,12 @@ a{color:var(--master)}
 .btn-ghost{border:1.5px solid rgba(255,255,255,.6);color:#fff}
 .btn-ghost:hover{background:rgba(255,255,255,.12)}
 
+/* tarjeta de historia */
+.story{background:#fff;color:var(--ink);margin-top:-48px;position:relative;z-index:2;box-shadow:0 12px 40px rgba(0,48,44,.18);padding:30px 32px}
+.story .quote{font-size:22px;line-height:1.45;color:var(--master)}
+.story .who{margin-top:12px;font-family:var(--display);font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.story .detail{margin-top:14px;color:var(--muted)}
+
 /* avance */
 .stats{display:flex;gap:36px;flex-wrap:wrap;margin:8px 0 18px}
 .stat b{font-family:var(--display);font-size:30px;color:var(--master);display:block;letter-spacing:.02em}
@@ -66,7 +72,7 @@ a{color:var(--master)}
 .count .cell{background:var(--sec-2);border:1px solid var(--line);padding:10px 16px;text-align:center;min-width:78px}
 .count .cell b{font-family:var(--display);font-size:26px;color:var(--master);display:block}
 .count .cell span{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-.avance-card{background:#fff;margin-top:-48px;position:relative;z-index:2;box-shadow:0 12px 40px rgba(0,48,44,.18);padding:30px 32px}
+.avance-card{background:#fff;margin-top:16px;box-shadow:0 12px 40px rgba(0,48,44,.18);padding:30px 32px}
 
 /* secciones */
 section{padding:64px 0}
@@ -171,6 +177,12 @@ footer .wrap{display:flex;justify-content:space-between;align-items:flex-end;gap
 </section>
 
 <div class="wrap">
+  <div class="story" id="historia">
+    <div class="quote">De un salón Tecmilenio a representar a México en Kuwait.</div>
+    <div class="who">Equipo TERMIKA · Campus Reynosa</div>
+    <div class="detail">5 estudiantes crearon un recubrimiento contra incendios hecho con material recuperado de llantas. Ganadores Absolutos de ExpoCiencias Tamaulipas 2026: representarán a México en la ExpoCiencias Internacional 2027 en Kuwait.</div>
+  </div>
+
   <div class="avance-card" id="avance">
     <div class="stats">
       <div class="stat"><b id="st-recaudado">-</b><span>Recaudado</span></div>
@@ -323,7 +335,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:flex-end;gap
 <footer>
   <div class="wrap">
     <div class="tagline">Está en ti<small>TECMILENIO.COM</small></div>
-    <div class="data-note">Página de apoyo de iniciativa personal de León Velázquez: no procesa pagos y todo donativo se realiza en el <a href="https://donar.tec.mx/s/formulario?Sitio=CarrerasVirtuales&Pr=a2N3f000000kXgmEAE&Cnia=a2GUG000003P0vx2AC&Campus=0013f000002IBZAAA4&IdEquipo=a1FUG000001epcj2AA" target="_blank" rel="noopener">formulario oficial del Tec de Monterrey</a>. Cifras tomadas de la página oficial de la campaña en Carrera Virtual (carreravirtual.tec.mx), con sello de actualización visible. Historias y citas: <a href="https://blog.tecmilenio.mx/articulos/enactus-mexico-2026-kuali-app-inclusiva" target="_blank" rel="noopener">KUALI y GRASO (28-ago-2026)</a> y <a href="https://blog.tecmilenio.mx/articulos/sebastian-valenzuela-premio-estatal-juventud-escomblock" target="_blank" rel="noopener">ESCOMBLOCK (9-oct-2026)</a>, blog oficial de Tecmilenio. Cifra de 400 jóvenes: <a href="https://www.infonor.com.mx/articulo/entry/para-formar-agentes-de-cambio-ha-becado-tecmilenio-a-400-jovenes" target="_blank" rel="noopener">nota de prensa</a>.</div>
+    <div class="data-note">Página de apoyo de iniciativa personal de León Velázquez: no procesa pagos y todo donativo se realiza en el <a href="https://donar.tec.mx/s/formulario?Sitio=CarrerasVirtuales&Pr=a2N3f000000kXgmEAE&Cnia=a2GUG000003P0vx2AC&Campus=0013f000002IBZAAA4&IdEquipo=a1FUG000001epcj2AA" target="_blank" rel="noopener">formulario oficial del Tec de Monterrey</a>. Cifras tomadas de la página oficial de la campaña en Carrera Virtual (carreravirtual.tec.mx), con sello de actualización visible. Historias: <a href="https://blog.tecmilenio.mx/articulos/termika-proyecto-innovacion-social-tecmilenio" target="_blank" rel="noopener">TERMIKA (15-oct-2026)</a>, <a href="https://blog.tecmilenio.mx/articulos/enactus-mexico-2026-kuali-app-inclusiva" target="_blank" rel="noopener">KUALI y GRASO (28-ago-2026)</a> y <a href="https://blog.tecmilenio.mx/articulos/sebastian-valenzuela-premio-estatal-juventud-escomblock" target="_blank" rel="noopener">ESCOMBLOCK (9-oct-2026)</a>, blog oficial de Tecmilenio. Cifra de 400 jóvenes: <a href="https://www.infonor.com.mx/articulo/entry/para-formar-agentes-de-cambio-ha-becado-tecmilenio-a-400-jovenes" target="_blank" rel="noopener">nota de prensa</a>.</div>
   </div>
 </footer>
 
