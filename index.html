@@ -78,6 +78,20 @@ section{padding:64px 0}
 h2{font-size:26px;margin-bottom:14px}
 .sec-intro{max-width:62ch;color:var(--muted);margin-bottom:32px}
 
+/* carrusel de historias */
+.carousel-shell{position:relative}
+.carousel{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px;scrollbar-width:thin}
+.card-story{flex:0 0 330px;scroll-snap-align:start;border:1px solid var(--line);background:#fff;padding:26px 24px;display:flex;flex-direction:column;gap:12px}
+.card-story .tag{font-family:var(--display);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#00301F;background:var(--uni);display:inline-block;padding:4px 10px;align-self:flex-start}
+.card-story h3{font-size:16px;letter-spacing:.03em}
+.card-story p{font-size:15px;color:var(--muted)}
+.card-story .q{font-style:italic;color:var(--master);border-left:3px solid var(--uni);padding-left:12px;font-size:15px}
+.card-story .src{margin-top:auto;font-family:var(--display);font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
+.card-story .src:hover{color:var(--uni)}
+.car-nav{display:flex;gap:10px;margin-top:16px}
+.car-nav button{width:42px;height:42px;border:1.5px solid var(--master);background:#fff;color:var(--master);font-size:18px;cursor:pointer}
+.car-nav button:hover{background:var(--master);color:#fff}
+
 /* brecha */
 .gap-card{border:2px solid var(--master);padding:34px 36px;background:#fff}
 .gap-card .big{font-family:var(--display);font-weight:800;font-size:clamp(30px,4vw,44px);color:var(--master)}
@@ -186,7 +200,43 @@ footer .wrap{display:flex;justify-content:space-between;align-items:flex-end;gap
   </div>
 </div>
 
-<section class="sec-alt" id="brecha">
+<section class="sec-alt" id="historias">
+  <div class="wrap">
+    <h2>No es la única historia</h2>
+    <p class="sec-intro">En campuses de todo el país hay proyectos así, nacidos de estudiantes con propósito. Cada beca abre la puerta a la siguiente generación de historias como estas.</p>
+    <div class="carousel-shell">
+      <div class="carousel" id="carousel">
+        <div class="card-story">
+          <span class="tag">Campus Las Torres</span>
+          <h3>KUALI · Aprender sin internet</h3>
+          <p>Ocho estudiantes crearon una app educativa inclusiva que funciona sin conexión, para comunidades rurales y personas con discapacidad. Campeones Nacionales Enactus México 2026: representarán a México en la Enactus World Cup en São Paulo, Brasil.</p>
+          <div class="q">"Cada niño merece ser escuchado y todos tenemos la capacidad de aprender."</div>
+          <a class="src" href="https://blog.tecmilenio.mx/articulos/enactus-mexico-2026-kuali-app-inclusiva" target="_blank" rel="noopener">Leer la historia</a>
+        </div>
+        <div class="card-story">
+          <span class="tag">Campus Culiacán</span>
+          <h3>ESCOMBLOCK · De escombros a vivienda</h3>
+          <p>Sebastián Valenzuela, estudiante de Administración, convierte residuos de construcción en bloques: más de 1,000 personas beneficiadas y 500 bloques donados a fundaciones. Premio Estatal de la Juventud en Sinaloa.</p>
+          <div class="q">"Con la donación de 300 bloques, una familia pudo pasar de tener una casa de lámina a tener una vivienda."</div>
+          <a class="src" href="https://blog.tecmilenio.mx/articulos/sebastian-valenzuela-premio-estatal-juventud-escomblock" target="_blank" rel="noopener">Leer la historia</a>
+        </div>
+        <div class="card-story">
+          <span class="tag">Campus Guadalupe</span>
+          <h3>GRASO · Jabón desde aceite usado</h3>
+          <p>Estudiantes transforman aceite de cocina usado en jabón biodegradable. Uno de los tres proyectos ganadores en México del Ford Community Resiliency Student Challenge 2026.</p>
+          <div class="q">Economía circular hecha en un salón Tecmilenio.</div>
+          <a class="src" href="https://blog.tecmilenio.mx/articulos/enactus-mexico-2026-kuali-app-inclusiva" target="_blank" rel="noopener">Leer la historia</a>
+        </div>
+      </div>
+      <div class="car-nav">
+        <button id="car-prev" aria-label="Anterior">&larr;</button>
+        <button id="car-next" aria-label="Siguiente">&rarr;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="brecha">
   <div class="wrap">
     <h2>Lo que falta se ve así</h2>
     <p class="sec-intro">La meta es de toda la red. Y la brecha, a diferencia de lo que parece, es alcanzable: se cierra con muchos donativos chicos, no con unos cuantos grandes.</p>
@@ -200,7 +250,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:flex-end;gap
   </div>
 </section>
 
-<section>
+<section class="sec-alt">
   <div class="wrap">
     <h2>Dona con confianza</h2>
     <p class="sec-intro">Todo el proceso ocurre en el formulario oficial del Tec de Monterrey. Esta página solo te acompaña hasta ahí.</p>
@@ -212,7 +262,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:flex-end;gap
   </div>
 </section>
 
-<section class="sec-alt" id="como">
+<section id="como">
   <div class="wrap">
     <h2>Cómo donar en 3 pasos</h2>
     <p class="sec-intro">Menos tiempo del que toma un café. El monto lo eliges en el formulario oficial: cada donativo suma, sin importar la cantidad.</p>
@@ -224,7 +274,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:flex-end;gap
   </div>
 </section>
 
-<section>
+<section class="sec-alt">
   <div class="wrap purpose">
     <div>
       <h2>Por qué importa</h2>
@@ -239,7 +289,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:flex-end;gap
   </div>
 </section>
 
-<section class="sec-alt">
+<section>
   <div class="wrap">
     <h2>Corre la voz</h2>
     <p class="sec-intro">Las campañas de comunidad no las gana una persona: las gana quien reenvía. Comparte esta página con tu equipo, tu campus o tu familia.</p>
@@ -286,7 +336,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:flex-end;gap
 <footer>
   <div class="wrap">
     <div class="tagline">Está en ti<small>TECMILENIO.COM</small></div>
-    <div class="data-note">Página de apoyo de iniciativa personal, sin fines de recaudo: no procesa pagos y todo donativo se realiza en el <a href="https://donar.tec.mx/s/formulario?Sitio=CarrerasVirtuales&Pr=a2N3f000000kXgmEAE&Cnia=a2GUG000003P0vx2AC&Campus=0013f000002IBZAAA4&IdEquipo=a1FUG000001epcj2AA" target="_blank" rel="noopener">formulario oficial del Tec de Monterrey</a>. Cifras tomadas de la página oficial de la campaña en Carrera Virtual (carreravirtual.tec.mx), con sello de actualización visible. Historia de TERMIKA y cita de José Pedro Sánchez Barrón: <a href="https://blog.tecmilenio.mx/articulos/termika-proyecto-innovacion-social-tecmilenio" target="_blank" rel="noopener">blog oficial de Tecmilenio, 15-oct-2026</a>. Cifra de 400 jóvenes: nota pública de prensa sobre Becas con Propósito.</div>
+    <div class="data-note">Página de apoyo de iniciativa personal, sin fines de recaudo: no procesa pagos y todo donativo se realiza en el <a href="https://donar.tec.mx/s/formulario?Sitio=CarrerasVirtuales&Pr=a2N3f000000kXgmEAE&Cnia=a2GUG000003P0vx2AC&Campus=0013f000002IBZAAA4&IdEquipo=a1FUG000001epcj2AA" target="_blank" rel="noopener">formulario oficial del Tec de Monterrey</a>. Cifras tomadas de la página oficial de la campaña en Carrera Virtual (carreravirtual.tec.mx), con sello de actualización visible. Historias de estudiantes y citas: <a href="https://blog.tecmilenio.mx/articulos/termika-proyecto-innovacion-social-tecmilenio" target="_blank" rel="noopener">TERMIKA (15-oct-2026)</a>, <a href="https://blog.tecmilenio.mx/articulos/enactus-mexico-2026-kuali-app-inclusiva" target="_blank" rel="noopener">KUALI y GRASO (28-ago-2026)</a> y <a href="https://blog.tecmilenio.mx/articulos/sebastian-valenzuela-premio-estatal-juventud-escomblock" target="_blank" rel="noopener">ESCOMBLOCK (9-oct-2026)</a>, blog oficial de Tecmilenio. Cifra de 400 jóvenes: nota pública de prensa sobre Becas con Propósito.</div>
   </div>
 </footer>
 
@@ -323,6 +373,13 @@ function tick(){
   document.getElementById('cs').textContent=s%60;
 }
 tick();setInterval(tick,1000);
+
+document.getElementById('car-prev').addEventListener('click',function(){
+  document.getElementById('carousel').scrollBy({left:-348,behavior:'smooth'});
+});
+document.getElementById('car-next').addEventListener('click',function(){
+  document.getElementById('carousel').scrollBy({left:348,behavior:'smooth'});
+});
 
 var msg='Te invito a sumarte al Tecmitón 2026 de Tecmilenio: tu donativo apoya Becas con Propósito. La campaña cierra el 5 de noviembre. ';
 document.getElementById('share-wa').href='https://wa.me/?text='+encodeURIComponent(msg+location.href);
