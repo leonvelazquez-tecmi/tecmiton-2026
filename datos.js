@@ -1,10 +1,10 @@
-// Tecmitón 2026 - datos oficiales de la campaña (Carrera Virtual)
-// Para actualizar: cambia los 4 valores y el sello. La página hace el resto.
+// Tecmitón 2026 - resultado final (Carrera Virtual)
+// Para actualizar: cambia los valores y el sello. La página hace el resto.
 window.TECMITON_DATOS = {
-  procurado: 107729,
+  procurado: 339165,
   meta: 300000,
-  donantes: 250,
-  actualizado: "1-nov-2026, 6:37 am",
+  donantes: 582,
+  actualizado: "8-nov-2026, 7:12 pm",
   inicio: "2026-10-28T00:00:00-06:00",
   cierre: "2026-11-05T23:59:00-06:00"
 };
